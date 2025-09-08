@@ -1,0 +1,23 @@
+When I tested : 
+
+ssignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+> myMean <- function(assignment2) {
++   return(sum(assignment) / length(someData)) 
+ 
+I got nothing that printed, and no error popped up. 
+
+Though there was no error, the function did not succeed in printing the mean for the list of variables. 
+
+To correct this, you have to change "assignment" and "someData" to assignment2 so it knows to use the variables from that vector. 
+
+This is what the finished code should look like: 
+
+
+
+> assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+> myMean <- function(assignment2) {
++   return(sum(assignment2) / length(assignment2))
++ }  
+> myMean(assignment2)
+[1] 19.25
+> 
